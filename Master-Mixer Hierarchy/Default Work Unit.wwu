@@ -11,10 +11,24 @@
 					</ReferenceList>
 					<ObjectLists/>
 				</Bus>
-				<Bus Name="Motion Factory Bus" ID="{2AF9B9C6-6EF1-46E9-B5F2-E30C9E602C74}">
+				<Bus Name="Cave Audio Bus" ID="{C066FEFE-A01F-44BA-97AA-D89733FD5517}">
 					<ReferenceList>
 						<Reference Name="AudioDevice">
-							<ObjectRef Name="Default_Motion_Device" ID="{FBD9835C-5F8B-4575-98E7-0E691C1BFF64}" WorkUnitID="{A545A2BE-81E8-4FFC-99C4-A2860BA62186}"/>
+							<ObjectRef Name="System" ID="{5F2DF205-78E7-4627-B3CF-E1738B268C3A}" WorkUnitID="{A545A2BE-81E8-4FFC-99C4-A2860BA62186}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Wwise RoomVerb (Custom)" ID="{247E1501-DD3E-41EA-82BD-B9011B73E465}" ShortID="1011889235" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<PropertyList>
+										<Property Name="DecayTime" Type="Real32" Value="3"/>
+										<Property Name="Density" Type="Real32" Value="66"/>
+										<Property Name="ERPattern" Type="int32" Value="9"/>
+										<Property Name="HFDamping" Type="Real32" Value="3.2"/>
+										<Property Name="PreDelay" Type="Real32" Value="16"/>
+										<Property Name="Quality" Type="int32" Value="12"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
 						</Reference>
 					</ReferenceList>
 					<ObjectLists/>

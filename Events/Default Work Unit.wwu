@@ -1,6 +1,480 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{05DE82F5-D39B-4A53-BC8C-C195C583DCE5}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{05DE82F5-D39B-4A53-BC8C-C195C583DCE5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{05DE82F5-D39B-4A53-BC8C-C195C583DCE5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="UI" ID="{974255E3-E592-46C6-8708-60091676DBAB}" ShortID="244931065">
+					<ChildrenList>
+						<Folder Name="Menu" ID="{6CAF4B42-E226-4C0C-8A07-A0DCA9F1CF0D}" ShortID="246315662">
+							<ChildrenList>
+								<Event Name="UI_Button_Down" ID="{C2702F04-B7CB-41D5-9B05-EEC5160B4A89}">
+									<ChildrenList>
+										<Action Name="" ID="{FF6CD539-6026-42F1-BB73-A45AB80A2EA9}" ShortID="1030237133">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BAS_Button_Over" ID="{EE5899C1-282A-424D-AE68-5B1AFF12EA0D}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="UI_Button_Up" ID="{8B11930C-588C-489E-83C0-99EC3DC3B2C7}">
+									<ChildrenList>
+										<Action Name="" ID="{8C472F0D-46B7-4221-A162-DCD7DCFD08A3}" ShortID="906577685">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BAS_Button_Over" ID="{EE5899C1-282A-424D-AE68-5B1AFF12EA0D}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="UI_Button_Enter" ID="{13B0C00A-56E9-47A2-98AE-ED0EE5613B90}">
+									<ChildrenList>
+										<Action Name="" ID="{995A2839-38D9-499B-A541-D4C9E2D5F885}" ShortID="335490633">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BAS_Button_Enter" ID="{7684157A-240E-4FD5-BBFB-566955B1CABC}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="UI_Button_Exit" ID="{EB0C5816-133C-4321-9C2A-0AA2A9300408}">
+									<ChildrenList>
+										<Action Name="" ID="{1606D0C3-CB03-4553-A9EF-31C0E71EF806}" ShortID="778548506">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BAS_Button_Close" ID="{1CC111C2-55A3-4B99-B9BC-0C3EC52ED180}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="UI_Menu_Pause" ID="{4CD2D4CC-6377-4A27-92C5-1198A2BED6E1}">
+									<ChildrenList>
+										<Action Name="" ID="{011A8929-AC08-4CC8-AC85-D80D60380E7B}" ShortID="154884925">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BAS_Button_Enter" ID="{7684157A-240E-4FD5-BBFB-566955B1CABC}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="UI_Menu_Resume" ID="{2C32E132-F8A4-4CE5-9538-5E2CC1733C95}">
+									<ChildrenList>
+										<Action Name="" ID="{BA41B6EE-C42F-4327-9DCE-33C4E2861A4E}" ShortID="731642086">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BAS_Button_Close" ID="{1CC111C2-55A3-4B99-B9BC-0C3EC52ED180}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="UI_Menu_Select" ID="{A2C0D87B-9E10-4E9A-B299-9FEB25E61D6A}">
+									<ChildrenList>
+										<Action Name="" ID="{90FA2AA3-5382-4F15-A864-5B9C7D1D5F9C}" ShortID="257688413">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BAS_Inventory_Select" ID="{03407F79-FB27-43EC-8474-89439A409B70}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="UI_Menu_Teleport" ID="{FC55987B-D452-4913-9A72-0CCDEB38297D}">
+									<ChildrenList>
+										<Action Name="" ID="{21376F02-ACE9-45D8-8C31-E2ED39CE0EA3}" ShortID="94833565">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BAS_Button_Teleport" ID="{0D8B16D8-D3CB-4340-BA86-466C89F44034}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Inventory" ID="{C874A772-93CE-4557-AC1F-E4D850505201}" ShortID="923388334">
+							<ChildrenList>
+								<Event Name="UI_Inventory_Open" ID="{689C8411-D7AB-4FC1-9C33-23AB92062296}">
+									<ChildrenList>
+										<Action Name="" ID="{114E7D42-F76E-469C-8599-04BD74F294F0}" ShortID="730691650">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BAS_Inventory_Open" ID="{D5FDC9F4-671E-4EE3-841C-67DE6ABDF564}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="UI_Inventory_Close" ID="{8A3C499E-2EE2-4137-A53E-957037535810}">
+									<ChildrenList>
+										<Action Name="" ID="{488BB783-5724-4D84-AAFF-D1F50B20524C}" ShortID="474962891">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BAS_Inventory_Close" ID="{76ED69F7-F11D-4168-8651-8D4D6CF766BE}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="UI_Inventory_Roll" ID="{6408E8B3-3CAE-4DEC-B706-C6786AE24043}">
+									<ChildrenList>
+										<Action Name="" ID="{5428369A-83E6-49DC-AFC7-9E590B853089}" ShortID="435548158">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BAS_Inventory_Scroll" ID="{2352EF99-68F1-4E48-924C-B9D6DEC7DD61}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="QuestRoll" ID="{7341BA12-F389-4966-9E82-89E16D3694E5}" ShortID="753377535">
+							<ChildrenList>
+								<Event Name="UI_QuestRoll_Show" ID="{9FD54AE5-8BF7-4100-A4FE-4B08E5F5916D}">
+									<ChildrenList>
+										<Action Name="" ID="{DE61F81F-C63B-4854-BA8F-9FDB56FCA751}" ShortID="434648487">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BAS_QuestRoll_Open" ID="{204440A6-846F-4B84-958B-948C1B57DFCC}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="UI_QuestRoll_Open" ID="{605BEA58-EB52-4643-BDB6-1CD4CA034F81}"/>
+								<Event Name="UI_QuestRoll_Close" ID="{4346FD6D-193F-4315-AF44-72A18E5F8CA0}">
+									<ChildrenList>
+										<Action Name="" ID="{74443907-7F9B-4DD4-935F-C9BABBACBB07}" ShortID="69204023">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BAS_QuestRoll_Close" ID="{0A974B4C-3229-49A3-8388-DFCFAA68D574}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="UI_QuestRoll_Hide" ID="{9E2D36DC-12C4-46CC-9C2D-C8F70DA2D1DE}"/>
+								<Event Name="Quest_Complete" ID="{E37AC12A-32FD-4FB0-92BB-9DA7363B2566}">
+									<ChildrenList>
+										<Action Name="" ID="{99DA7D42-D567-4895-A7A0-C73707224398}" ShortID="118433744">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BAS_Button_Teleport" ID="{0D8B16D8-D3CB-4340-BA86-466C89F44034}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Quest_CompleteCollection" ID="{67F9BC3C-3852-49E9-B445-C3ED4220E956}">
+									<ChildrenList>
+										<Action Name="" ID="{09B8E6C9-90F0-4C22-A657-3D9E12551603}" ShortID="1019539393">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="QuickStinger_GetItem" ID="{922AFE7A-4D72-4384-A5BC-F0999A7F21B7}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Destruction" ID="{6D3CA2C6-6E90-4ADD-9750-78465CF3FA48}" ShortID="452879407">
+					<ChildrenList>
+						<Event Name="Destruction_Container" ID="{29A056A8-4D0F-469C-8681-10E32D6CCC4A}">
+							<ChildrenList>
+								<Action Name="" ID="{428B2AC2-1A25-4D01-83E3-BDE6C86C47AE}" ShortID="854395219">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CrateDestruction" ID="{F2B22E8E-0579-4ABF-B7BA-DD6A43643263}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Destruction_Crystal_Destroy" ID="{6CF79D64-E112-4C48-8CF6-0EF31276A022}">
+							<ChildrenList>
+								<Action Name="" ID="{0CE57E44-4DCD-40F7-8C07-C515262F9997}" ShortID="171642661">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BAS_Crystals_Destroy" ID="{F1952E18-B45E-4F9E-9F0C-1836B16F32D9}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Destruction_Rock_Destroy" ID="{E3DCB70B-E25F-418E-9B93-A8840892F689}">
+							<ChildrenList>
+								<Action Name="" ID="{468EF37C-6496-4E4F-B67B-F874A958B8E9}" ShortID="349095390">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RockDestruction" ID="{4C485534-BC63-4F51-A41D-6E9689669A66}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Destruction_VolcanicBoulder_Impact" ID="{61933339-A763-46C8-9583-0C547818F157}">
+							<ChildrenList>
+								<Action Name="" ID="{9C5D8EA8-BD36-4958-8F13-3DCE1BFF4E2A}" ShortID="504136588">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Explosion" ID="{DE4D1F8C-962C-4414-B08F-60766063F502}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="AmbientRegion" ID="{44283763-1DD5-4342-A3EA-8A3E2E4A6B73}" ShortID="352132376">
+					<ChildrenList>
+						<Event Name="Ambient_Region_Cave" ID="{0D3B56AE-061C-4A39-829D-3016E15D76AA}">
+							<ChildrenList>
+								<Action Name="" ID="{FC292912-55C2-4003-87BE-166AE3F1A8AA}" ShortID="7168931">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BAS_amb_cave_background_LP" ID="{DF6133CA-FB99-4EE6-9691-8D27019B092C}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambient_Region_Desert" ID="{2751C595-6DCC-4432-8BDE-424C4D057958}">
+							<ChildrenList>
+								<Action Name="" ID="{AAA182BD-3120-48F8-B770-154BDAF616F5}" ShortID="904574540">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BAS_amb_desert_day_background_loop_01" ID="{E6C9EDA0-BA36-4707-9D0A-CF8A92641492}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8E9B5427-CFEC-46EA-A2A1-797DBC19603B}" ShortID="1055438188">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BAS_amb_desert_night_background_loop_01" ID="{20C089F7-0609-4193-AC90-49DBFED6ED8F}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambient_Region_Dungeon" ID="{0C787097-81B6-4E05-8519-C8458E0972BE}">
+							<ChildrenList>
+								<Action Name="" ID="{E979E43B-3E89-4711-A57A-D6D89686DDBB}" ShortID="995709146">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BAS_amb_dungeon_day_background_loop_01" ID="{22471D4C-7557-4BE6-87C8-7A2AC8F04F87}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambient_Region_PineForest" ID="{4CA79096-3EB4-4D89-8C9B-64DE536733C3}">
+							<ChildrenList>
+								<Action Name="" ID="{833EDA64-C624-4C01-9038-3B71789239E9}" ShortID="1073031066">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="amb_forest_night_background_loop_02" ID="{6236DA6A-0E16-4394-87E4-9615FFFA7DCB}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{36D5ED5E-DF3C-4015-89AC-1AE5E2012E8B}" ShortID="63914129">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BAS_amb_pineforest_night_background_loop_01" ID="{6F0FAD39-AA63-4E1D-ABE1-0D86F11572FB}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0CF9CD14-93AE-4211-BB08-2E2ABB960589}" ShortID="1004106989">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BAS_ForestBirds" ID="{4E17700A-BC13-4A2A-A8B3-B84741413C27}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambient_Region_Village" ID="{ED7876FE-539C-49B9-8C6E-228BFB501F0B}">
+							<ChildrenList>
+								<Action Name="" ID="{13C310A8-7B6B-440E-9EBD-42A91BBDE6DE}" ShortID="716141380">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BAS_amb_village_day_background_loop_01" ID="{28BEDE47-B7D4-437F-AD69-59F7F89C8DF3}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{570B9B0B-A8A1-4892-B2E5-83711F3BCAA9}" ShortID="606406664">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BAS_amb_village_night_background_loop_01" ID="{993A0240-BD73-4546-86FC-C683A060EE34}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambient_Region_Woodlands" ID="{955E5D86-92EF-4396-B729-EC37449D574C}">
+							<ChildrenList>
+								<Action Name="" ID="{802BF680-A1A3-4259-9465-A838CE2162B9}" ShortID="366971887">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="amb_forest_night_background_loop_04" ID="{59E8E6E0-1105-4270-9862-CACD934A97E2}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{12FF1366-D046-4EE1-AF56-FF24D1F11A64}" ShortID="930338363">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BAS_amb_forest_day_background_loop_01" ID="{104D6C76-FED1-46D3-AE40-52032DA51ACC}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B26499F4-741F-4EDB-A64C-3BFFF5D0BD7E}" ShortID="31857403">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BAS_ForestBirds" ID="{4E17700A-BC13-4A2A-A8B3-B84741413C27}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="AmbientEmitter" ID="{44009FB2-CDC9-4773-ABF2-EBF51A7293F8}" ShortID="887118462">
+					<ChildrenList>
+						<Event Name="Ambient_Campfire_Play" ID="{655F0025-6E56-4AE2-97F9-D1789F183DB2}">
+							<ChildrenList>
+								<Action Name="" ID="{4C7510F8-02F3-419A-AFA4-FC08C75500EC}" ShortID="489335844">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BAS_Torch" ID="{1BB0689B-984A-459D-AB6B-775B8F5DFB7C}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambient_Campfire_Stop" ID="{82480F20-3A4C-4D4F-9B01-A43EF5B04CE5}"/>
+						<Event Name="Ambient_Crystal_Hum" ID="{C07862E7-AF89-47B1-A7E5-E826EE1533E2}">
+							<ChildrenList>
+								<Action Name="" ID="{2CBD6775-5250-4AE6-AA24-D604DB9A47BA}" ShortID="111525624">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BAS_Crystal_Ringing" ID="{79AF66BB-E1A2-40CE-9E07-2FC6BBEE4830}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambient_Lava" ID="{A0BCCD45-6A7D-48CB-9377-94E6D542088A}">
+							<ChildrenList>
+								<Action Name="" ID="{49329BB2-A7A4-47B0-B1C2-0B2900F91466}" ShortID="19808984">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BAS_Lava" ID="{2CDBEB19-FA8F-46B3-97B9-7AE3381C6ECB}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambient_River" ID="{3D9E6CB6-79CB-42DB-BC57-6CB3BC67C173}">
+							<ChildrenList>
+								<Action Name="" ID="{9CFE0ADB-88EF-4AD2-B83C-06B9F60F867F}" ShortID="985685688">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BAS_Water_River" ID="{47783653-E70B-4BFE-8272-0A7FB48411F5}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambient_Torch" ID="{A7F279F7-22B9-4AE6-B6AB-E2231F0913D5}">
+							<ChildrenList>
+								<Action Name="" ID="{4326EB56-5160-4B05-9090-943832BB3C22}" ShortID="79641560">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BAS_Torch" ID="{1BB0689B-984A-459D-AB6B-775B8F5DFB7C}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambient_Waterfall" ID="{0990D6B5-7703-4456-A92E-4EED429E0454}">
+							<ChildrenList>
+								<Action Name="" ID="{29251157-DAD8-4728-9A69-1931002EA481}" ShortID="976248551">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BAS_Waterfall" ID="{0E0087D0-3E42-4B34-92F0-C2CC43605FC8}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambient_Windmill" ID="{6FF416CF-0074-4ADC-B36F-AA9578523586}">
+							<ChildrenList>
+								<Action Name="" ID="{2F71A5D6-12B2-41A1-9682-807A4A3B7F27}" ShortID="403815727">
+									<PropertyList>
+										<Property Name="Probability" Type="Real64" Value="75"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BAS_WindMillBlade_01" ID="{8DC21FAB-17DA-4B56-896E-4559AAF61015}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E0478CFE-2128-43BC-8E2D-2768B796D41A}" ShortID="75351220">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WindmillWind" ID="{364CEB33-BB0B-4680-955B-B72E19C2F231}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambient_WaterDrop" ID="{32EEE555-F2FE-42C6-B113-96B4BA1F5A1C}">
+							<ChildrenList>
+								<Action Name="" ID="{FE483B33-692D-4094-A6C0-1859AED781F6}" ShortID="964668487">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WaterDrops" ID="{EF0609E9-75E9-4909-A040-44216FBCFB54}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Stop_All" ID="{E39643DF-2FC5-47FF-85D6-E809415D6252}">
+					<ChildrenList>
+						<Action Name="" ID="{1B3FCE19-5EA5-4FBF-B37A-AC98512817AC}" ShortID="706257651">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Player" ID="{525DD299-BA14-41F3-9278-4930BF25288E}" ShortID="548840641">
+					<ChildrenList>
+						<Event Name="Player_Footstep" ID="{FAC048D8-3B89-4C69-B5E1-40C964BBAD54}">
+							<ChildrenList>
+								<Action Name="" ID="{C2D7EA5F-ADB0-4E5E-AC42-F17CD19D74E8}" ShortID="617222842">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Walk" ID="{60D2739F-8E4A-4E49-A21C-CF4C5C43442F}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
