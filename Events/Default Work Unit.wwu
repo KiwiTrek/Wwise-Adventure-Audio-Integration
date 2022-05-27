@@ -485,20 +485,10 @@
 						</Event>
 						<Event Name="Player_Health" ID="{B85F5EF3-9FE3-4352-9906-A7BCFE810F04}">
 							<ChildrenList>
-								<Action Name="" ID="{2686DA50-80F3-4324-A142-1AFED3A8ED1C}" ShortID="595172516">
+								<Action Name="" ID="{8A3CBF39-EEA6-445C-891D-C21A1E9D233C}" ShortID="1049601332">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Dub" ID="{8E83FA1D-3E00-4CBF-B342-454EB3FCC0CC}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{C51D0A58-F665-43AA-AB33-F1B6A08A2612}" ShortID="774063083">
-									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="0.4"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Lub" ID="{649590F1-8876-4CA2-9E99-BF54A1E95230}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+											<ObjectRef Name="Heartbeat" ID="{C25DCB8F-3B3B-4014-BE81-D12FEABFAF94}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
