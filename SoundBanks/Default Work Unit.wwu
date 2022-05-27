@@ -24,6 +24,7 @@
 								<ObjectRef Name="UI_Menu_Pause" ID="{4CD2D4CC-6377-4A27-92C5-1198A2BED6E1}" WorkUnitID="{05DE82F5-D39B-4A53-BC8C-C195C583DCE5}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="Ambient_Campfire_Play" ID="{655F0025-6E56-4AE2-97F9-D1789F183DB2}" WorkUnitID="{05DE82F5-D39B-4A53-BC8C-C195C583DCE5}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="Ambient_Torch" ID="{A7F279F7-22B9-4AE6-B6AB-E2231F0913D5}" WorkUnitID="{05DE82F5-D39B-4A53-BC8C-C195C583DCE5}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="Player_Footstep" ID="{FAC048D8-3B89-4C69-B5E1-40C964BBAD54}" WorkUnitID="{05DE82F5-D39B-4A53-BC8C-C195C583DCE5}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="UI_Menu_Resume" ID="{2C32E132-F8A4-4CE5-9538-5E2CC1733C95}" WorkUnitID="{05DE82F5-D39B-4A53-BC8C-C195C583DCE5}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="Ambient_Campfire_Stop" ID="{82480F20-3A4C-4D4F-9B01-A43EF5B04CE5}" WorkUnitID="{05DE82F5-D39B-4A53-BC8C-C195C583DCE5}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="UI_Inventory_Roll" ID="{6408E8B3-3CAE-4DEC-B706-C6786AE24043}" WorkUnitID="{05DE82F5-D39B-4A53-BC8C-C195C583DCE5}" Origin="Manual" Filter="7"/>

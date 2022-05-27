@@ -9,6 +9,7 @@
 						<Property Name="Max" Type="Real64" Value="24"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Player_MovementSpeed" ID="{1214283A-4E9E-4410-9BB4-BBEDC7F4A467}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

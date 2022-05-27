@@ -466,7 +466,7 @@
 								<Action Name="" ID="{C2D7EA5F-ADB0-4E5E-AC42-F17CD19D74E8}" ShortID="617222842">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Walk" ID="{60D2739F-8E4A-4E49-A21C-CF4C5C43442F}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+											<ObjectRef Name="Footsteps" ID="{60D2739F-8E4A-4E49-A21C-CF4C5C43442F}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
