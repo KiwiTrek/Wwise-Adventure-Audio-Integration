@@ -9,28 +9,92 @@
 							<ObjectRef Name="System" ID="{5F2DF205-78E7-4627-B3CF-E1738B268C3A}" WorkUnitID="{A545A2BE-81E8-4FFC-99C4-A2860BA62186}"/>
 						</Reference>
 					</ReferenceList>
-					<ObjectLists/>
-				</Bus>
-				<Bus Name="Cave Audio Bus" ID="{C066FEFE-A01F-44BA-97AA-D89733FD5517}">
-					<ReferenceList>
-						<Reference Name="AudioDevice">
-							<ObjectRef Name="System" ID="{5F2DF205-78E7-4627-B3CF-E1738B268C3A}" WorkUnitID="{A545A2BE-81E8-4FFC-99C4-A2860BA62186}"/>
-						</Reference>
-						<Reference Name="Effect0">
-							<Custom>
-								<Effect Name="Wwise RoomVerb (Custom)" ID="{247E1501-DD3E-41EA-82BD-B9011B73E465}" ShortID="1011889235" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-									<PropertyList>
-										<Property Name="DecayTime" Type="Real32" Value="3"/>
-										<Property Name="Density" Type="Real32" Value="66"/>
-										<Property Name="ERPattern" Type="int32" Value="9"/>
-										<Property Name="HFDamping" Type="Real32" Value="3.2"/>
-										<Property Name="PreDelay" Type="Real32" Value="16"/>
-										<Property Name="Quality" Type="int32" Value="12"/>
-									</PropertyList>
-								</Effect>
-							</Custom>
-						</Reference>
-					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Master" ID="{1ED40184-580A-40F1-BB18-EA30158586CF}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{6B28FB86-A8F8-4B39-B5AB-39AAD45602AC}" ShortID="955571349">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="MenuSlider_Master_Volume" ID="{CBDCFD45-7655-4909-A0C6-B053AED85223}" WorkUnitID="{2D408172-D99D-417D-9389-ADC83AB490FA}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{03A7D2FB-09C6-4165-AA93-9F8CDC8EF044}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ChildrenList>
+								<AuxBus Name="Cave" ID="{3AE33138-1CBC-4DA1-84C6-A022D6177D84}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Reverb" ID="{D633F316-BE37-43B7-BD9E-F700F8E5184A}" WorkUnitID="{54509227-7EF2-4C3C-89A8-FA5681FF7C64}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</AuxBus>
+								<AuxBus Name="Dungeon" ID="{F9D838C0-93FE-46F7-9CDD-713C38D59C0B}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Reverb" ID="{D633F316-BE37-43B7-BD9E-F700F8E5184A}" WorkUnitID="{54509227-7EF2-4C3C-89A8-FA5681FF7C64}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</AuxBus>
+							</ChildrenList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Music" ID="{13D272CB-60DF-46EF-ABCB-24DD0685717C}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{F6061126-9392-4776-92C1-BEB984D27AE2}" ShortID="451333841">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="MenuSlider_Music_Volume" ID="{867549AF-28D8-4BB4-8842-54DDE5FAFB02}" WorkUnitID="{2D408172-D99D-417D-9389-ADC83AB490FA}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{7C20A32B-46EB-44D4-A361-4EF085418275}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ObjectLists/>
+						</Bus>
+					</ChildrenList>
 					<ObjectLists/>
 				</Bus>
 			</ChildrenList>

@@ -31,6 +31,7 @@
 								<ObjectRef Name="Ambient_Campfire_Stop" ID="{82480F20-3A4C-4D4F-9B01-A43EF5B04CE5}" WorkUnitID="{05DE82F5-D39B-4A53-BC8C-C195C583DCE5}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="UI_Inventory_Roll" ID="{6408E8B3-3CAE-4DEC-B706-C6786AE24043}" WorkUnitID="{05DE82F5-D39B-4A53-BC8C-C195C583DCE5}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="UI_Menu_Select" ID="{A2C0D87B-9E10-4E9A-B299-9FEB25E61D6A}" WorkUnitID="{05DE82F5-D39B-4A53-BC8C-C195C583DCE5}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="Music_Region" ID="{0AF78B5A-E903-4F10-A8D2-7163F415C0CB}" WorkUnitID="{05DE82F5-D39B-4A53-BC8C-C195C583DCE5}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="Quest_Complete" ID="{E37AC12A-32FD-4FB0-92BB-9DA7363B2566}" WorkUnitID="{05DE82F5-D39B-4A53-BC8C-C195C583DCE5}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="UI_Inventory_Open" ID="{689C8411-D7AB-4FC1-9C33-23AB92062296}" WorkUnitID="{05DE82F5-D39B-4A53-BC8C-C195C583DCE5}" Origin="Manual" Filter="7"/>
 							</ObjectInclusionList>

@@ -496,6 +496,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Music" ID="{855F6C20-95D9-4029-BCF8-CBA4C9D17B1B}" ShortID="656585130">
+					<ChildrenList>
+						<Event Name="Music_Region" ID="{0AF78B5A-E903-4F10-A8D2-7163F415C0CB}">
+							<ChildrenList>
+								<Action Name="" ID="{E9569D41-00AB-4467-8682-B023E62C628F}" ShortID="180916502">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Regions" ID="{FCCEF160-ABCD-4E30-B2A0-31F3F03FEB13}" WorkUnitID="{603C63A2-94BF-471B-97D1-957DF78117FB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

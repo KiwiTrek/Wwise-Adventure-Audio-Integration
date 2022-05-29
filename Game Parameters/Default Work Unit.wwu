@@ -15,6 +15,8 @@
 						<Property Name="InitialValue" Type="Real64" Value="100"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="MenuSlider_Master_Volume" ID="{CBDCFD45-7655-4909-A0C6-B053AED85223}"/>
+				<GameParameter Name="MenuSlider_Music_Volume" ID="{867549AF-28D8-4BB4-8842-54DDE5FAFB02}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
